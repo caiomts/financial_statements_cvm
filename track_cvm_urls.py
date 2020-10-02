@@ -9,7 +9,7 @@ Get URL from CVM website.
 def urls_cvm(url='http://dados.cvm.gov.br/dados/CIA_ABERTA/',
              ver='2017-09-16 12:54  '):
     """
-    Acess to CVM website from the default URL,
+    Acess the CVM website from the default URL,
     access all directories and get links to download the files
     with the date of the last modification. Returns a dictionary,
     whose key is the link and the variable is the date.
