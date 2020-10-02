@@ -1,5 +1,5 @@
 """
-Download and format a DataFrame with companies by sector and tickers.
+Download and construct a DataFrame with companies by sector and tickers.
 
 @author: caiomts
 @email: caiomts@gmail.com
@@ -8,13 +8,13 @@ Download and format a DataFrame with companies by sector and tickers.
 
 def stocks_in_index_by_sector(index='IBrA', path=''):
     """
-    Return a pandas.DataFrame with stocks belonging a given index with sector,
+    Return a pandas.DataFrame of stocks belonging a given index with sector,
     site, name and yahoo ticker model.
     """
     import pandas as pd
 
     def index_by_sector(index, path=path):
-        """Build a DataFrame from an index and a B3 table of sectors."""
+        """Construct a DataFrame from an index and the B3 table of sectors."""
         import pandas as pd
         import get_files_cvm as gfc
         import os
